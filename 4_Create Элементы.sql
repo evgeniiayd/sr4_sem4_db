@@ -1,0 +1,8 @@
+CREATE TABLE `sr4_sem4`.`Elements` (
+`ElementsID` INT NOT NULL, `ElemID` INT NOT NULL, 
+`Comment` varchar(100) NULL,
+PRIMARY KEY (`ElementsID`),
+INDEX `fk1_idx` (`ElemID` ASC) VISIBLE,
+CONSTRAINT fk1 FOREIGN KEY (`ElemID`)
+REFERENCES `Element`(`ElemID`) ON DELETE CASCADE ON UPDATE CASCADE
+) engine = InnoDB DEFAULT CHARSET=utf8;

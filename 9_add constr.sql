@@ -1,0 +1,2 @@
+ALTER TABLE `BookStatus`
+ADD CONSTRAINT un_info UNIQUE(info);
